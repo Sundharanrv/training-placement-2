@@ -1,0 +1,11 @@
+public class StringStats {
+    public static void main(String[] args) {
+        String text = "Hello world\nWelcome to Java\nProgramming is fun";
+        int charCount = text.length();
+        int wordCount = text.split("\\s+").length;
+        int lineCount = text.split("\n").length;
+        System.out.println("Chars: " + charCount);
+        System.out.println("Words: " + wordCount);
+        System.out.println("Lines: " + lineCount);
+    }
+}
