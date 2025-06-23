@@ -1,0 +1,16 @@
+public class CharCounter {
+    public static void main(String[] args) {
+        String str = "Hello123@#";
+        int digits = 0, letters = 0, specials = 0;
+
+        for(char c : str.toCharArray()) {
+            if(Character.isDigit(c)) digits++;
+            else if(Character.isLetter(c)) letters++;
+            else specials++;
+        }
+
+        System.out.println("Letters: " + letters);
+        System.out.println("Digits: " + digits);
+        System.out.println("Specials: " + specials);
+    }
+}
