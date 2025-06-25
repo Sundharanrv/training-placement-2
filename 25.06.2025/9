@@ -1,0 +1,4 @@
+items = [1, 2, 3, 4, 5]
+print("Original:", items)
+items.reverse()
+print("Reversed:", items)
