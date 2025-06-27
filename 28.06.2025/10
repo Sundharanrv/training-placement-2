@@ -1,0 +1,6 @@
+lst = [int(x) for x in input("Enter list elements: ").split()]
+largest = lst[0]
+for num in lst:
+    if num > largest:
+        largest = num
+print("Largest element:", largest)
