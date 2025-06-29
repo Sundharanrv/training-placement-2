@@ -1,0 +1,6 @@
+import string
+text = input("Enter a sentence: ").lower()
+if all(letter in text for letter in string.ascii_lowercase):
+    print("Pangram")
+else:
+    print("Not a pangram")
